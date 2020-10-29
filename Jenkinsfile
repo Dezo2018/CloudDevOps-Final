@@ -36,7 +36,7 @@ pipeline {
             }
             stage ('Deploy blue container'){
                 steps{
-                    withAWS(region: 'us-west-2', credentials: 'capstone') {
+                    withAWS(region: 'us-east-1', credentials: 'capstone') {
                         sh '''
                 kubectl apply -f ./blue-controller.json
                 '''
@@ -45,7 +45,7 @@ pipeline {
             }
             stage ('Deploy green container'){
                 steps{
-                    withAWS(region: 'us-west-2', credentials: 'capstone') {
+                    withAWS(region: 'us-east-1', credentials: 'capstone') {
                         sh '''
                 kubectl apply -f ./green-controller.json
                 '''
