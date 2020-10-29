@@ -22,7 +22,7 @@
             "containers":[
                {
                   "name":"green",
-                  "image":"emjotpe/capstone_cloud_devops",
+                  "image":"deskins/capstone_cloud_devops",
                   "ports":[
                      {
                         "name":"http-server",
